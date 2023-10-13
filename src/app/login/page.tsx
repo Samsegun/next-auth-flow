@@ -82,9 +82,17 @@ const LoginPage = () => {
                     Login
                 </button>
 
-                <Link href='/signup' className='my-4 block text-amber-800'>
-                    Go to Sign Up page
-                </Link>
+                <div className='flex items-center gap-4'>
+                    <Link
+                        href='/forgotpassword'
+                        className='my-4 block text-amber-800'>
+                        Forgot Password?
+                    </Link>
+                    |
+                    <Link href='/signup' className='my-4 block text-amber-800'>
+                        Go to Sign Up page
+                    </Link>
+                </div>
             </div>
         </div>
     );

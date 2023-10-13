@@ -12,7 +12,7 @@ const VerifyEmail = () => {
         try {
             const token = window.location.search.split("=")[1];
             const res = await axios.post("/api/users/verifyemail", { token });
-            console.log(res);
+            console.log(res.data);
 
             setVerified(true);
         } catch (error: any) {
